@@ -34,7 +34,7 @@ DealFinder <- function(x){
                 subject = paste(BookNames[[i]],"paso de $",BookCurrentPrices[[i]],"a $",(BookNewPrices[[i]])),
                 body = paste("Podes comprarlo aca:",x[[i]]),
                 smtp = list(host.name="smtp.gmail.com", port=465, user.name="ElCorreoDeLasOfertasR@gmail.com", 
-                            passwd="wtvqbdpejmynotze", ssl=TRUE),
+                            passwd="thepassword", ssl=TRUE),
                 authenticate = TRUE,
                 send = TRUE)
       BookCurrentPrices[[i]] <<- BookNewPrices[[i]]
